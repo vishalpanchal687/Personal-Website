@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">
+            <h2>Item 1</h2>
+            <p> Enter Jean-Frédéric Dufour, a man with a solid background in the watchmaking industry. After graduating 
+                in commercial and industrial sciences at the University of Geneva, Jean-Frédéric Dufour made a veritable
+                tour d'horizon through the haute horlogerie Brand Rolex Watch.</p>
+        </div>
+        <div class="item item2">
+            <h2>Item 2</h2>
+            <p> WELCOME BACK BJØRN
+                In 2023, adidas welcomes Bjørn Gulden its new CEO and member of the Executive Board.As a former professional football 
+                and handball player with almost 30 years of experience in the sporting goods and footwear industry, Bjørn brings with
+                him a wealth of knowledge in sport and retail</p>
+        </div>
+        <div class="item item3">
+            <h2>Item 3</h2>
+            <p> John Joseph Donahoe II (born April 30, 1960) is an American businessman who is the CEO of Nike.
+                Early in his career he worked for Bain & Company, becoming the firm's president and CEO in 1999.</p>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        background-color: #f7f7f7;
+        padding: 20px;
+    }
+    .item{
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .item:hover{
+        transform: translateY(-5px);
+    }
+    .item h2{
+        color: #333;
+        margin-top: 0;
+    }
+    .item p{
+        color: #666;
+    }
+    .item1{
+        background-color: #e6f2ff;
+    }
+    .item2{
+        background-color: #fff2e6;
+    }
+    .item3{
+        background-color: #e6ffed;
+    }
+</style>
